@@ -1,0 +1,8 @@
+transformers==3.0.2
+numpy
+tqdm
+TensorboardX
+pysrt
+h5py
+nltk
+
