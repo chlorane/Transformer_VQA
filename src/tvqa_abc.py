@@ -16,16 +16,16 @@ class ABC(nn.Module):
         self.sub_flag = "sub" in opt.input_streams
         self.vcpt_flag = "vcpt" in opt.input_streams
         self.bsz=opt.bsz
-        self.Tmodel=tmodel
+        self.Tmodel=opt.tmodel
         hidden_size_1 = opt.hsz1
         hidden_size_2 = opt.hsz2
         n_layers_cls = opt.n_layers_cls
         embedding_size = opt.embedding_size
         vocab_size = opt.vocab_size
-        tmodel=opt.tmodel
+
         tmoname=opt.tmoname
         MODEL_CLASSES = {"bert": (BertConfig, BertForMultipleChoice, BertTokenizer),"xlnet": (XLNetConfig, XLNetForMultipleChoice, XLNetTokenizer),"roberta": (RobertaConfig, RobertaForMultipleChoice, RobertaTokenizer),"albert":(AlbertConfig, AlbertForMultipleChoice, AlbertTokenizer)}
-        config_class, model_class, tokenizer_class = MODEL_CLASSES[tmodel]
+        config_class, model_class, tokenizer_class = MODEL_CLASSES[self.Tmodel]
         config = config_class.from_pretrained(tmoname, num_labels=5, finetuning_task="TVQA", cache_dir=None)
         tokenizer=tokenizer_class.from_pretrained(tmoname, do_lower_case=True, cache_dir=None)
 
