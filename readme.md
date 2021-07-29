@@ -1,6 +1,6 @@
 This is the code to our work entitled A Comparative Study of Language Transformers for Video Question Answering. We used language Transformers to represent both visual and language elements and compared the performance of four different Transformers (BERT, XLNet, RoBERTa and ALBERT).
 
-This work will be published soon.
+This work has been published on Neurocomputing entitled "A comparative study of language transformers for video question answering".
 
 You need to install python 3.6, Nvidia driver and cuda toolkit.
 
