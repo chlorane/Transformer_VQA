@@ -4,7 +4,7 @@ This work has been published on Neurocomputing entitled "A comparative study of 
 
 You need to install python 3.6, Nvidia driver and cuda toolkit.
 
-To use this code, download the package first, then download TVQA dataset at http://tvqa.cs.unc.edu/download_tvqa.html (with visual concepts, subtitles, questions and answers) and put it into ./data/raw. 
+To use this code, first download the package first, then download TVQA dataset at http://tvqa.cs.unc.edu/download_tvqa.html (with visual concepts, subtitles, questions and answers) and put it into ./data/raw. 
 
 Then, run src/preprocessing.py for pre-processing. The processed data is shown in ./data/processed.
 
