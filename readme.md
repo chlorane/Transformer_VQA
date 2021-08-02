@@ -28,7 +28,7 @@ to build the container.
 
 To run the code, use
 
-bash bin/run.sh --gpus=all (image name) python run.py
+bash bin/run.sh --gpus=all (image name) python bin/run.py
 
 For validation, use
 
